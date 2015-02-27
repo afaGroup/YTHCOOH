@@ -1,0 +1,60 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define degreeTOradians(x) (M_PI * (x)/180)
+
+#define kDEVICEMAC @"DeviceMac"
+#define KDEVICELOCATION @"DeviceLocaition"
+#define kFORMALDEHYDE @"Formaldehyde"
+#define kTEMPERATURE @"Temperature"
+#define kHUMIDITY @"Humidity"
+#define kPM @"PM"
+#define kPM10 @"PM10"
+#define KVOC @"VOC"
+#define kDEVICETYPE @"DeviceType"
+
+#define kCURRENTDEVICEMAC @"CurrentDeviceMac"
+#define kCURRENTDEVICETYPE @"CurrentDeviceType"
+#define kCURRENTDEVICELocation @"CurrentDeviceLocation"
+
+#define kSERVERHOSTNAME @"112.74.103.235"
+#define KSERVERURLPARTTWO @"XXXXXXXXXXXXX"
+
+#define kSOCKETHOST @"192.168.4.1"
+#define KSOCKETPORT 8080
+
+#define kREGISTERSERVERPATH @"/quan/androidregister.jsp"
+#define kLOGINSEVERPATH @"/quan/androidlogin.jsp"
+#define kRETRIEVESEVERPATH @"/quan/androidverifypwd.jsp"
+#define kCHANGELOCATIONSEVERPATH @"/quan/androidchangge_equipment_location.jsp"
+#define kCHANGEPASSWORDSEVERPATH @"/quan/androidchangpwd.jsp"
+#define kRESETPASSWORDSEVERPATH @"/quan/androidchangforgetpwd.jsp"
+#define kLOADINGALLDEVICESEVERPATH @"/quan/androidreadmyeqlist.jsp"
+#define kLOADINGDEVICERECORDSEVERPATH @"/quan/androidEnvironmentTrend.jsp"
+#define kLOADINGDEVICENEWDETAILSEVERPATH @"/quan/androidrealtime_data_on_menuactivity.jsp"
+#define kDELETEMYDEVICESEVERPATH @"/quan/androiddelequipment.jsp"
+#define kADDREGISTEREDDEVICESERVERPATH @"/quan/androidaddequipment.jsp"
+#define kCONTROLPM10MONITORSERVERPATH @"/quan/androidstart_pm_listenner.jsp"
+#define kGETAIRCONDITIONALLSTUDYFLAGSEVERPATH @"/quan/androidAllStudyFlag.jsp"
+#define kAIRCONDITIONSTUDYSEVERPATH @"/quan/androidStudy.jsp"
+#define kAIRCONDITIONCONTROLSEVERPATH @"/quan/androidTeleControl.jsp"
+#define kGETAIRCLEARNERALLSTUDYFLAGSERVERPATH @"/quan/androidairfindallstudy.jsp"
+#define kAIRCLEANERSTUDYSEVERPATH @"/quan/androidAirStudy.jsp"
+#define kAIRCLEANERCONTROLSEVERPATH @"/quan/androidTeleAirControl.jsp"
+#define kGETTVALLSTUDYFLAGSEVERPATH @"/quan/androidtvfindallstudy.jsp"
+#define kTVSTUDYSERVERPATH @"/quan/androidTVStudy.jsp"
+#define kTVCONTROLSEVERPATH @"/quan/androidTeleTVControl.jsp"
